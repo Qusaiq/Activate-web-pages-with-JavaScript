@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <style>
+        body,
+        html {
+            background: linear-gradient(30deg, rgb(236, 205, 169), rgb(185, 215, 236));
+            height: 100%;
+            width: 100%;
+            margin: 1px;
+        }
+
+        h1 {
+            background-color: rgba(173, 216, 230, 0.911);
+            color: orangered;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+            font-weight: bold;
+            font-size: 40px;
+            border-radius: 20px;
+            margin-left: 25%;
+            margin-right: 25%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <div>Hey</div>
+        </h1>
+    </header>
+    <main>
+        <div>
+            <hr style="margin-bottom: 20px;">
+            <p style="font-size: 20px; color: rgba(255, 0, 0, 0.52); margin-left: 20px;">Can you tell me what's your'e
+                name ^_^ </p>
+
+            <hr style="margin-left: 20%;margin-right: 25%;margin-top: 20px">
+
+            <p id="n" style="font-size: 20px; color: cornflowerblue; margin-left: 20px;">Nice to meet You :<span style="font-size:
+                    20px; color:whitesmoke; margin-left:20px;">
+                    <script>
+                        let name = prompt("Your name :");
+                        document.write(name);
+
+                    </script>
+                </span>
+            </p>
+
+            <hr style="margin-left: 20%;margin-right: 25%;margin-top: 20px">
+
+            <p style="font-size: 20px; color: goldenrod; margin-left: 20px;">Rate studying online please .<br>
+            <p id="demo"
+                style="margin-left: 20px;background-color: rgba(255, 235, 205, 0.596); color: rgb(255, 7, 7);border-radius: 10px; margin-right: 75% ;">
+            </p>
+            </p>
+
+            <button onclick="myFunction()"
+                style="margin-left: 20px;background-color: goldenrod;outline: none;border: none;border-radius: 5px;">Rate</button>
+
+
+
+            <script>
+                function myFunction() {
+                    let rate = prompt("g.Good or b.bad");
+                    if (rate == 'g') {
+                        document.getElementById("demo").innerHTML =
+                            "Hello " + name + " That's good for you keep the hard work ";
+                    }
+                    else if (rate == 'b') {
+                        document.getElementById("demo").innerHTML =
+                            "Hello " + name + " You have to do some more effort  ";
+                    }
+                    else {
+                        document.getElementById("demo").innerHTML =
+                            "Hello " + name + "! how are you today , please make an answer ";
+                    }
+                }
+            </script>
+
+            <hr style="margin-left: 20%;margin-right: 25%;margin-top: 20px">
+
+            <p style="font-size: 20px; color: cornflowerblue; margin-left: 20px;">Nice to meet you <br><br> <span id="msg">
+
+                    <script>
+                        function greet() {
+                            document.getElementById("msg").innerHTML = " " + name + " hope you a very successful carrer !"
+                        }
+                    </script>
+
+                </span> </p>
+
+            <button onclick="greet()"
+                style="margin-left: 20px;background-color: cornflowerblue;outline:  none;border: none;border-radius: 5px;">Finish
+                ?</button>
+
+
+            <hr style="margin-left: 20%;margin-right: 25%;margin-top: 20px">
+
+            <hr style="margin-top: 20px;">
+
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
